@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--saját, régebbi html vázat használtam fel a feladatnál-->
+    <div class="container">
+      <form class="form">
+        <h1>Regisztráció</h1>
+        <div class="form-control">
+          <label for="name">Név</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Név"
+          />
+          <small>Error</small>
+        </div>
+        <div class="form-control">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="nev@pelda.hu"
+          />
+          <small>Error</small>
+        </div>
+        <div class="form-control">
+          <label for="email">E-mail megerősítés</label>
+          <input
+            type="email"
+            id="emailAgain"
+            name="emailAgain"
+            placeholder="nev@pelda.hu"
+          />
+          <small>Error</small>
+        </div>
+        <div class="form-control">
+          <label for="feedback">Honnan hallott rólunk?</label>
+          <select
+            name="feedback"
+            id="feedback"
+            required
+          >
+            <option
+              value=""
+              disabled
+              selected
+              hidden
+            >
+              Kérjuk válasszon
+            </option>
+            <option value="internet">Internetről</option>
+            <option value="tv">Televízióból</option>
+            <option value="other">Egyéb helyről</option>
+          </select>
+          <small>Error</small>
+        </div>
+        <div class="form-control">
+          <label for="accept">Elfogadom az adatkezelési nyilatkozatot</label>
+          <input
+            type="checkbox"
+            value="remember-me"
+            id="accept"
+            name="accept"
+            required
+          />
+          <small>Error</small>
+        </div>
+        <div class="button">
+          <input
+            type="submit"
+            value="Regisztrálok"
+          />
+        </div>
+      </form>
+    </div>
+    <script
+      type="text/javascript"
+      src="main.js"
+    ></script>
+  </body>
+</html>
